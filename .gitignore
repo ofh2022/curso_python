@@ -1,0 +1,76 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+digital/
+bin/
+lib/
+lib64/
+include/
+
+# ===============================
+# Environment / Secrets
+# ===============================
+.env
+.env.*
+*.env
+
+# ===============================
+# Airflow
+# ===============================
+airflow.cfg
+webserver_config.py
+
+# Logs do Airflow
+logs/
+airflow-logs/
+
+# Banco do Airflow local (caso exista)
+airflow.db
+
+# ===============================
+# Docker
+# ===============================
+*.log
+*.pid
+
+# Volumes locais (caso alguém suba fora do Docker)
+postgres-db-volume/
+redis-data/
+
+# ===============================
+# IDEs / SO
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Testes / Temporários
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
+*.tmp
+*.bak
+
+# ===============================
+# Dados locais (NUNCA versionar)
+# ===============================
+data/
+*.csv
+*.xlsx
+*.parquet
+*.json
